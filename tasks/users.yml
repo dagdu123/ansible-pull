@@ -1,0 +1,12 @@
+- name: create ansible user
+  user:
+    name: dagdu
+    system: yes
+
+- name: copy sudoers_dagdu
+  copy:
+    src: files/sudoers_dagdu
+    dest: /etc/sudoers.d/dagdu
+    owner: root
+    group: root
+    mode: 0440
