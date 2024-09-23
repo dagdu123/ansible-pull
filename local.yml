@@ -5,5 +5,8 @@
   tasks:
   - name:  Install HTOP
     apt:
-      name: htop
+      name:
+        - htop
+        - mc
+        - tmux
 
